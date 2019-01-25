@@ -21,34 +21,43 @@ body, html {
   background-size: contain;
 }
   @-webkit-keyframes argh-my-eyes {
-    0%   { background-color: #fffc00; }
-    49% { background-color: #fffc00; }
+    0%   { background-color: #FF0000; }
+    49% { background-color: #FF0000; }
     50% { background-color: #000; }
     99% { background-color: #000; }
-    100% { background-color: #fffc00; }
+    100% { background-color: #FF0000; }
   }
   @-moz-keyframes argh-my-eyes {
-    0%   { background-color: #fffc00; }
-    49% { background-color: #fffc00; }
+    0%   { background-color: #FF0000; }
+    49% { background-color: #FF0000; }
     50% { background-color: #000; }
     99% { background-color: #000; }
-    100% { background-color: #fffc00; }
+    100% { background-color: #FF0000; }
   }
   @keyframes argh-my-eyes {
-    0%   { background-color: #fffc00; }
-    49% { background-color: #fffc00; }
+    0%   { background-color: #FF0000; }
+    49% { background-color: #FF0000; }
     50% { background-color: #000; }
     99% { background-color: #000; }
-    100% { background-color: #fffc00; }
+    100% { background-color: #FF0000; }
   }
   body {
   -webkit-animation: argh-my-eyes 1s infinite;
   -moz-animation:    argh-my-eyes 1s infinite;
   animation:         argh-my-eyes 1s infinite;
 }
+            h1 {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translateX(-50%) translateY(-50%);
+                text-align: center;
+                font-family: "Arial Black", Gadget, sans-serif;
+                font-size: 3em;
 </style>
 </head>
 <body>
+	<h1>ALERT</h1>
 <div id="player">
     <audio autoplay loop hidden>
      <source src="https://fidcn.github.io/statusboard/alerts/alert2.mp3" type="audio/mpeg">
