@@ -1,1 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+}
 
+.bg {
+  /* The image used */
+  background-image: url("tornado-warning.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+  @-webkit-keyframes argh-my-eyes {
+    0%   { background-color: #50c878; }
+    49% { background-color: #50c878; }
+    50% { background-color: #50c878; }
+    99% { background-color: #50c878; }
+    100% { background-color: #50c878; }
+  }
+  @-moz-keyframes argh-my-eyes {
+    0%   { background-color: #50c878; }
+    49% { background-color: #50c878; }
+    50% { background-color: #50c878; }
+    99% { background-color: #50c878; }
+    100% { background-color: #50c878; }
+  }
+  @keyframes argh-my-eyes {
+    0%   { background-color: #50c878; }
+    49% { background-color: #50c878; }
+    50% { background-color: #50c878; }
+    99% { background-color: #50c878; }
+    100% { background-color: #50c878; }
+  }
+  body {
+  -webkit-animation: argh-my-eyes 1s infinite;
+  -moz-animation:    argh-my-eyes 1s infinite;
+  animation:         argh-my-eyes 1s infinite;
+}
+            h1 {
+                position: absolute;
+                left: 50%;
+                top: 30%;
+                transform: translateX(-50%) translateY(-50%);
+                text-align: center;
+                font-family: "Arial Black", Gadget, sans-serif;
+                font-size: 5em;
+</style>
+</head>
+<body>
+	<h1>CLEAR</h1>
+<div id="player">
+    <audio autoplay loop hidden>
+     <source src="https://fidcn.github.io/statusboard/alerts/alert2.mp3" type="audio/mpeg">
+                If you're reading this, audio isn't supported. 
+    </audio>
+</div>
+</body>
+</html>
