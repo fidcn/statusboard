@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.bg {
+  /* The image used */
+  background-image: url("weather.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+  @-webkit-keyframes argh-my-eyes {
+    0%   { background-color: #ff0000; }
+    49% { background-color: #ff0000; }
+    50% { background-color: #fff; }
+    99% { background-color: #fff; }
+    100% { background-color: #ff0000; }
+  }
+  @-moz-keyframes argh-my-eyes {
+    0%   { background-color: #ff0000; }
+    49% { background-color: #ff0000; }
+    50% { background-color: #fff; }
+    99% { background-color: #fff; }
+    100% { background-color: #ff0000; }
+  }
+  @keyframes argh-my-eyes {
+    0%   { background-color: #ff0000; }
+    49% { background-color: #ff0000; }
+    50% { background-color: #fff; }
+    99% { background-color: #fff; }
+    100% { background-color: #ff0000; }
+  }
+  body {
+  -webkit-animation: argh-my-eyes 1s infinite;
+  -moz-animation:    argh-my-eyes 1s infinite;
+  animation:         argh-my-eyes 1s infinite;
+}
+</style>
+</head>
+<body>
+<div class="bg"></div>
+<div id="player">
+    <audio autoplay hidden>
+     <source src="https://fidcn.github.io/statusboard/alerts/pas_alarm.mp3" type="audio/mpeg">
+                If you're reading this, audio isn't supported. 
+    </audio>
+</div>
+</body>
+</html>
