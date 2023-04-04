@@ -10,7 +10,7 @@ body, html {
 
 .bg {
   /* The image used */
-  background-image: url("weather.jpg");
+  background-image: url("tornado-warning.jpg");
 
   /* Full height */
   height: 100%;
@@ -21,40 +21,44 @@ body, html {
   background-size: contain;
 }
   @-webkit-keyframes argh-my-eyes {
-    0%   { background-color: #ff0000; }
-    49% { background-color: #ff0000; }
-    50% { background-color: #fff; }
-    99% { background-color: #fff; }
-    100% { background-color: #ff0000; }
+    0%   { background-color: #FF0000; }
+    49% { background-color: #FF0000; }
+    50% { background-color: #000; }
+    99% { background-color: #000; }
+    100% { background-color: #FF0000; }
   }
   @-moz-keyframes argh-my-eyes {
-    0%   { background-color: #ff0000; }
-    49% { background-color: #ff0000; }
-    50% { background-color: #fff; }
-    99% { background-color: #fff; }
-    100% { background-color: #ff0000; }
+    0%   { background-color: #FF0000; }
+    49% { background-color: #FF0000; }
+    50% { background-color: #000; }
+    99% { background-color: #000; }
+    100% { background-color: #FF0000; }
   }
   @keyframes argh-my-eyes {
-    0%   { background-color: #ff0000; }
-    49% { background-color: #ff0000; }
-    50% { background-color: #fff; }
-    99% { background-color: #fff; }
-    100% { background-color: #ff0000; }
+    0%   { background-color: #FF0000; }
+    49% { background-color: #FF0000; }
+    50% { background-color: #000; }
+    99% { background-color: #000; }
+    100% { background-color: #FF0000; }
   }
   body {
   -webkit-animation: argh-my-eyes 1s infinite;
   -moz-animation:    argh-my-eyes 1s infinite;
   animation:         argh-my-eyes 1s infinite;
 }
+            h1 {
+                position: absolute;
+                left: 50%;
+                top: 30%;
+                transform: translateX(-50%) translateY(-50%);
+                text-align: center;
+                font-family: "Arial Black", Gadget, sans-serif;
+                font-size: 5em;
 </style>
 </head>
 <body>
-<div class="bg"></div>
-<div id="player">
-    <audio autoplay hidden>
-     <source src="https://fidcn.github.io/statusboard/alerts/pas_alarm.mp3" type="audio/mpeg">
-                If you're reading this, audio isn't supported. 
-    </audio>
+	<h1>THUNDERSTORM WARNING <br> VANDERBURGH COUNTY</h1>
+<embed src="https://fidcn.github.io/statusboard/alerts/weatheralert.mp3" width="180" height="90" loop="true" autostart="true" hidden="true" />
 </div>
 </body>
 </html>
